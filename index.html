@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantry Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Pantry-Planner-thumbnail.png">
+</head>
+<body>
+
+    <!-- Top navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="Pantry-Planner-thumbnail.png" alt="Pantry Planner Logo" class="nav-logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Search Recipes</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home section -->
+    <section id="home" class="full-screen-section"></section>
+
+    <!-- Quote and user reviews section -->
+    <section id="quote" class="description-section">
+        <div class="content-container">
+            <div class="quote">
+                <p><strong>"Cooking is like love. It should be entered into with abandon or not at all." <br> - Harriet Van Horne</strong></p>
+            </div>
+            <div class="reviews-section">
+                <h3>User Reviews</h3>
+                <div id="reviews-container">
+                    <!-- Reviews will be added here by JavaScript -->
+                </div>
+                <div class="review-form">
+                    <h4>Share your experience!</h4>
+                    <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+                    <button id="submitReviewBtn">Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe search section -->
+    <section id="recipes" class="content-section">
+        <div class="content-container">
+            <div class="filter-section">
+                <h2>Your Ingredients</h2>
+                <div class="ingredients-list">
+                    <!-- Checkboxes for ingredients -->
+                    <label><input type="checkbox" value="tomato"> Tomato</label>
+                    <label><input type="checkbox" value="onion"> Onion</label>
+                    <label><input type="checkbox" value="potato"> Potato</label>
+                    <label><input type="checkbox" value="ginger"> Ginger</label>                    
+                    <label><input type="checkbox" value="garlic"> Garlic</label>
+                    <label><input type="checkbox" value="carrot"> Carrot</label>                     
+                    <label><input type="checkbox" value="cabbage"> Cabbage</label>
+                    <label><input type="checkbox" value="paneer"> Paneer</label>
+                    <label><input type="checkbox" value="green chili"> Green chili</label>
+                    <label><input type="checkbox" value="beans"> Beans</label> 
+                    <label><input type="checkbox" value="spinach"> Spinach </label> 
+                    <label><input type="checkbox" value="coriander leaves"> Coriander leaves</label>                    
+                    <label><input type="checkbox" value="mint leaves"> Mint leaves</label>                    
+                    <label><input type="checkbox" value="curry leaves"> Curry leaves</label> 
+                    <br>
+                    <label><input type="checkbox" value="egg"> Egg</label>  
+                    <label><input type="checkbox" value="rice"> Rice</label>
+                    <label><input type="checkbox" value="yellow lentils"> Yellow lentils</label>   
+                    <label><input type="checkbox" value="black lentils"> Black lentils</label>   
+                    <label><input type="checkbox" value="poha"> Poha</label>
+                    <label><input type="checkbox" value="all-purpose flour"> All-purpose flour</label>
+                    <label><input type="checkbox" value="chickpeas"> Chickpeas</label>                    
+                    <label><input type="checkbox" value="bread"> Bread</label>                    
+                    <label><input type="checkbox" value="noodles"> Noodles</label>                  
+                    <label><input type="checkbox" value="semolina"> Semolina</label>                                    
+                    <label><input type="checkbox" value="yogurt"> Yogurt</label>
+                    <br>
+                    <label><input type="checkbox" value="milk"> Milk</label> 
+                    <label><input type="checkbox" value="cheese"> Cheese</label> 
+                    <label><input type="checkbox" value="sugar"> Sugar</label>   
+                    <label><input type="checkbox" value="butter"> Butter</label>                    
+                    <label><input type="checkbox" value="cream"> Cream</label>                   
+                    <label><input type="checkbox" value="fruit"> Fruit</label>                                     
+                    <label><input type="checkbox" value="cocoa powder"> Cocoa powder</label>
+                </div>
+                
+                <h3>Difficulty</h3>
+                <div class="difficulty-filters">
+                    <!-- Radio buttons for difficulty -->
+                    <label><input type="radio" name="difficulty" value="all" checked> All</label>
+                    <label><input type="radio" name="difficulty" value="easy"> Easy</label>
+                    <label><input type="radio" name="difficulty" value="intermediate"> Intermediate</label>
+                </div>
+
+                <button id="surpriseMeBtn">Surprise Me! </button>
+            </div>
+
+            <div class="recipes-container">
+                <h2>Available Recipes</h2>
+                <!-- Recipes will be dynamically added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us section -->
+    <section id="contact" class="content-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Email: contact@pantryplanner.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+
+            <div class="share-recipe-form">
+                <h3>Share Your Recipe!</h3>
+                <input type="text" id="recipeName" placeholder="Recipe Name">
+                <textarea id="recipeDetails" placeholder="Ingredients & Instructions"></textarea>
+                <button id="shareRecipeBtn">Share Recipe</button>
+            </div>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Pantry Planner. All Rights Reserved.</p>
+        <p>Made with 🍔 by Lucky</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
