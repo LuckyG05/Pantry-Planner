@@ -53,7 +53,7 @@ Simply open the index.html file in your preferred web browser. Alternatively, if
 ##  Live Demo
 You can view a live version of the project hosted on GitHub Pages:
 
-Live URL: []
+Live URL: [https://luckyg05.github.io/Pantry-Planner/](https://luckyg05.github.io/Pantry-Planner/)
 
 ---
 
